@@ -9,22 +9,22 @@ body:
     attributes:
       value: |
         Complete this form by answering the following questions!
-        Does this work as another line?
+        What are you proposing to investigate?
+        Why is it worth investigating it?
   - type: input
     id: contact
     attributes:
       label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      description: WHat is your Slack name?
+      placeholder: ex. @caroline.reiss
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: what-investigation
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: What is to be investigated?
+      description: Also tell us, why is worth investigating it?
+      placeholder: Please give as much detail as possible
     validations:
       required: true
   - type: dropdown
@@ -39,17 +39,10 @@ body:
         - Platforms
     validations:
       required: false
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
   - type: checkboxes
-    id: terms
+    id: checks
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      label: Existing issues
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: I have checked that there is nothing which would meet my needs already proposed in the Tech Funnel
           required: true
