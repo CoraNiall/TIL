@@ -8,7 +8,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Complete this form by answering the following questions! |
+        Complete this form by answering the following questions!
+        |
+        Does this work as another line?
   - type: input
     id: contact
     attributes:
@@ -27,27 +29,17 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: quadrantType
+    id: category
     attributes:
-      label: Type of tech
-      description: What type of technology are you proposing?
+      label: Category
+      description: In which category does your proposal belong?
       options:
         - Languages & Frameworks
         - Tools
         - Techniques
         - Platforms
     validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+      required: false
   - type: textarea
     id: logs
     attributes:
