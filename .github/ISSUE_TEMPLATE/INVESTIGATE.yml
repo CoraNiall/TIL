@@ -8,9 +8,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Complete this form by answering the following questions!
-        |
-        Does this work as another line?ga
+        Complete this form by answering the following questions! \n
+        Does this work as another line?
   - type: input
     id: contact
     attributes:
