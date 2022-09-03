@@ -1,7 +1,7 @@
 name: Investigate Proposal
 description: Submit a proposal to investigate
 title: "[INVESTIGATE]: "
-labels: ["investigate", "approved"]
+labels: ["Investigate", "Approved"]
 assignees:
   - coraniall
 body:
