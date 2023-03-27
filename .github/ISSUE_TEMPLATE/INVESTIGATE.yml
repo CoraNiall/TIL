@@ -1,48 +1,35 @@
-name: Investigate Proposal
-description: Submit a proposal to investigate
-title: "[INVESTIGATE]: "
-labels: ["Investigate", "Approved"]
-assignees:
-  - coraniall
+name: Propose to Investigate
+description: Technology that is being investigated prior to any trial
+title: '[INVESTIGATE] ...'
+labels:
+  - Investigate
+
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Complete this form by answering the following questions!
-        What are you proposing to investigate?
-        Why is it worth investigating it?
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: WHat is your Slack name?
-      placeholder: ex. @caroline.reiss
-    validations:
-      required: false
-  - type: textarea
-    id: what-investigation
-    attributes:
-      label: What is to be investigated?
-      description: Also tell us, why is worth investigating it?
-      placeholder: Please give as much detail as possible
-    validations:
-      required: true
   - type: dropdown
     id: category
     attributes:
-      label: Category
-      description: In which category does your proposal belong?
+      label: Proposal Category
+      multiple: false
       options:
-        - Languages & Frameworks
-        - Tools
+        - Langauges and Frameworks
         - Techniques
+        - Tools
         - Platforms
-    validations:
-      required: false
-  - type: checkboxes
-    id: checks
+
+  - type: textarea
+    id: purpose
     attributes:
-      label: Existing issues
-      options:
-        - label: I have checked that there is nothing which would meet my needs already proposed in the Tech Funnel
-          required: true
+      label: Purpose
+      description: What does the technology do? What problems should it solve
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Links. Costs.
+
+  - type: textarea
+    id: refs
+    attributes:
+      label: References
+      description: Links. Resources. Related issues/proposals
