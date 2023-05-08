@@ -1,0 +1,14 @@
+{
+  "name": "48-where",
+  "version": "1.0.0",
+  "description": "A practice project for learning Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Caroline Reiss",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.8.3"
+  }
+}
