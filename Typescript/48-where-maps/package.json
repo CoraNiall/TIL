@@ -1,5 +1,5 @@
 {
-  "name": "48-where",
+  "name": "48-where-maps",
   "version": "1.0.0",
   "description": "A practice project for learning Typescript",
   "main": "index.js",
@@ -9,6 +9,7 @@
   "author": "Caroline Reiss",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^7.6.0",
     "parcel": "^2.8.3"
   }
 }
